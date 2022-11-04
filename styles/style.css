@@ -17,24 +17,13 @@ main {
   padding: 0.5rem;
   text-align: center;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-ul {
-  list-style: none;
-  display: flex;
-}
-
-li {
-  margin-right: 1rem;
-}
 
 h1 {
   color: #e74c3c;
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
 }
 .container {
   display: grid;
@@ -70,12 +59,4 @@ h1 {
   text-transform: capitalize;
   font-size: 1.1rem;
   margin-top: 0.5rem;
-}
-
-.card--link {
-  text-decoration: none;
-  background: #db4938;
-  color: #fff;
-  padding: 0.3rem 1rem;
-  border-radius: 20px;
 }

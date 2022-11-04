@@ -1,23 +1,23 @@
-const staticDevCoffee = "dev-coffee-site-v1";
+const staticDevPokemon = "dev-coffee-site-v1";
 const assets = [
   "/",
   "/index.html",
   "/css/style.css",
   "/js/app.js",
-  "/images/coffee1.jpg",
-  "/images/coffee2.jpg",
-  "/images/coffee3.jpg",
-  "/images/coffee4.jpg",
-  "/images/coffee5.jpg",
-  "/images/coffee6.jpg",
-  "/images/coffee7.jpg",
-  "/images/coffee8.jpg",
-  "/images/coffee9.jpg"
+  "/images/pokemon1.jpg",
+  "/images/pokemon2.jpg",
+  "/images/pokemon3.jpg",
+  "/images/pokemon4.jpg",
+  "/images/pokemon5.jpg",
+  "/images/pokemon6.jpg",
+  "/images/pokemon7.jpg",
+  "/images/pokemon8.jpg",
+  "/images/pokemon9.jpg"
 ];
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticDevPokemon).then(cache => {
       cache.addAll(assets);
     })
   );

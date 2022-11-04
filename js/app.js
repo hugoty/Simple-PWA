@@ -1,40 +1,40 @@
 const container = document.querySelector(".container");
 const coffees = [
   {
-    name: "Perspiciatis",
-    image: "images/coffee1.jpg"
+    name: "Bulbizarre",
+    image: "images/pokemon1.png"
   },
   {
-    name: "Voluptatem",
-    image: "images/coffee2.jpg"
+    name: "Salamèche",
+    image: "images/pokemon2.png"
   },
   {
-    name: "Explicabo",
-    image: "images/coffee3.jpg"
+    name: "Carapuce",
+    image: "images/pokemon3.png"
   },
   {
-    name: "Rchitecto",
-    image: "images/coffee4.jpg"
+    name: "Aspicot",
+    image: "images/pokemon4.png"
   },
   {
-    name: " Beatae",
-    image: "images/coffee5.jpg"
+    name: "Roucool",
+    image: "images/pokemon5.png"
   },
   {
-    name: " Vitae",
-    image: "images/coffee6.jpg"
+    name: "Rattata",
+    image: "images/pokemon6.png"
   },
   {
-    name: "Inventore",
-    image: "images/coffee7.jpg"
+    name: "Piafabec",
+    image: "images/pokemon7.png"
   },
   {
-    name: "Veritatis",
-    image: "images/coffee8.jpg"
+    name: "Abo",
+    image: "images/pokemon8.png"
   },
   {
-    name: "Accusantium",
-    image: "images/coffee9.jpg"
+    name: "Pikachu",
+    image: "images/pokemon9.png"
   }
 ];
 const showCoffees = () => {
@@ -45,7 +45,6 @@ const showCoffees = () => {
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">Taste</a>
               </div>
               `)
   );
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", showCoffees);
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
-      .register("/serviceWorker.js")
+      .register("/sw.js")
       .then(res => console.log("service worker registered"))
       .catch(err => console.log("service worker not registered", err));
   });
